@@ -1,1 +1,1 @@
-web: gunicorn quenta.wsgi
+web: newrelic-admin run-program gunicorn quenta.wsgi
