@@ -1,0 +1,11 @@
+Storybook:
+
+{% if stories %}
+    <ul>
+    {% for story in stories %}
+        <li><a href="/story/{{ story.id }}/">{{ story.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No stories are available.</p>
+{% endif %}
